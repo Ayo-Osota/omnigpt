@@ -17,7 +17,7 @@ body {
   @apply grid gap-4;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 1024px) {
   .even-columns {
     @apply grid-flow-col grid-cols-1;
   }

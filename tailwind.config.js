@@ -16,6 +16,7 @@ module.exports = {
         '7.5': '1.875rem',
         '13': '3.25rem',
         '15': '3.75rem',
+        '26': '5.625rem',
         '128': '32rem',
         '144': '36rem',
       },
@@ -27,6 +28,9 @@ module.exports = {
       },
       fontSize: {
         '3.5xl': ['2rem', '2rem']
+      },
+      borderRadius: {
+        'chatBox': '4.1875rem',
       }
     },
   },

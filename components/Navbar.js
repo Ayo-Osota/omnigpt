@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="-container py-9 grid grid-flow-col grid-cols-2 items-center">
             <Image placeholder="blur" src={logo} alt="omnigpt" />
             <nav>
-                <ul className="flex justify-between">
+                <ul className="hidden justify-between md:flex">
                     {navLinks.map((navLink) => {
                         const { id, text, link } = navLink;
                         return (
