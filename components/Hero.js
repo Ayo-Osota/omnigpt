@@ -7,7 +7,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Hero = () => {
     return (
-        <div className="-container even-columns my-28">
+        <section className="-container even-columns my-28">
             <div>
                 <h1 className="font-header text-7xl max-w-[14ch] leading-[6rem]">Bring the power of AI to your <span className="effect-text">conversations</span> </h1>
                 <h5 className="text-3xl mt-3.5">Work Faster, Smarter, and Better Together</h5>
@@ -54,7 +54,7 @@ const Hero = () => {
                     <div className="w-full h-full bg-yellow-400 rounded-chatBox rounded-bl-none"></div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

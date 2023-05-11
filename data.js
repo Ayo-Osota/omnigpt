@@ -44,4 +44,10 @@ const navLinks = [
     },
 ]
 
-export {events, navLinks}
+const features = [
+    "Multi-Channel Support",
+    "AI-Powered Assistance",
+    "Easy to Use"
+]
+
+export {events, navLinks, features}
