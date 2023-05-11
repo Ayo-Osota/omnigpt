@@ -1,27 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  color: rgb(255, 255, 255);
+  background: rgb(17, 24, 38);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.-container {
+  @apply max-w-[1200px] mx-auto px-7.5;
+}
+
+.even-columns {
+  @apply grid gap-4;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    @apply grid-flow-col grid-cols-1;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.flow *:not(:first-child) {
+  margin-top: var(--flow-spacer, 3em);
+}
+
+.button {
+  @apply inline-flex cursor-pointer rounded py-4 px-5 bg-green-500 
+  hover:bg-green-400;
+  text-decoration: none;
+}
+
+.effect-text {
+  background-image: url(../public/assets/graphic_elements.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
